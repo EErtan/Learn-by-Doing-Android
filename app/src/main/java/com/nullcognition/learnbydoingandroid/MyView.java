@@ -1,6 +1,7 @@
 package com.nullcognition.learnbydoingandroid;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -132,6 +133,8 @@ public class MyView extends View {
 				return;
 		}
 		invalidate();
+
+
 	}
 
     @Override
@@ -141,6 +144,18 @@ public class MyView extends View {
 	    if(dr){ rc.draw(canvas); }
 	    if(dy){ yc.draw(canvas); }
 	    if(dg){ gc.draw(canvas); }
+
+	    if((dr && dy && dg) == true){
+		    dr = false;
+		    Intent i = new Intent(getContext(), MyActivity2.class);
+		    try{
+			    Thread.sleep(100);
+		    }
+		    catch(InterruptedException e){
+			    e.printStackTrace();
+		    }
+		    getContext().startActivity(i);
+	    }
     }
 
     /**

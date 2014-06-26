@@ -5,9 +5,13 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.text.util.Linkify;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +20,8 @@ public class MyActivity extends Activity implements LightFrag.OnFragmentInteract
 
 	LightFrag f;
 	String tfpath = "fonts/Fipps-Regular.otf"; // create the assets folder under main with java an res
+	EditText editTextSite;
+	TextView tv2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
@@ -26,6 +32,26 @@ public class MyActivity extends Activity implements LightFrag.OnFragmentInteract
 		TextView tv = (TextView)findViewById(R.id.textViewInActivity);
 		Typeface typef = Typeface.createFromAsset(getAssets(), tfpath);
 		tv.setTypeface(typef);
+
+		tv2 = (TextView)findViewById(R.id.textView2);
+		editTextSite = (EditText)findViewById(R.id.editTextSite);
+		editTextSite.addTextChangedListener(new TextWatcher(){
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after){
+
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count){
+
+			}
+
+			@Override
+			public void afterTextChanged(Editable s){
+				tv2.setAutoLinkMask(Linkify.WEB_URLS);
+				tv2.setText(s); // or can set it to a r.id.string, but since i am doing on edit on click functionality, it is not needed
+			}
+		});
 
 		addFrag();
 	}

@@ -7,5 +7,8 @@
     <string name="action_yellow">Yellow</string>
     <string name="action_green">Green</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="websiteCF">http://www.dafont.com/</string>
+    <string name="title_activity_my_activity2">MyActivity2</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
