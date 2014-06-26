@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Learn by Doing Android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_red">Red</string>
+    <string name="action_yellow">Yellow</string>
+    <string name="action_green">Green</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
