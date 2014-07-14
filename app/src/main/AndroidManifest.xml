@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nullcognition.learnbydoingandroid" >
+<manifest
+    package="com.nullcognition.learnbydoingandroid"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+
         <activity
             android:name=".MyActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".MyActivity2"
             android:label="@string/title_activity_my_activity2"
-            android:parentActivityName=".MyActivity" >
+            android:parentActivityName=".MyActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="MyActivity" />
+                android:value="MyActivity"/>
         </activity>
+        <activity
+            android:name=".ListAct"
+            android:label="@string/title_activity_list">
+        </activity>
+        <activity
+            android:name=".ListActiv"
+            android:label="@string/title_activity_list">
+        </activity>
+        <activity
+            android:name=".book.BookActivity"
+            android:label="@string/title_activity_book">
+        </activity>
+        <activity
+            android:name=".GridActivity"
+            android:label="@string/title_activity_grid">
+        </activity>
+        <activity
+            android:name=".VibrationActivity"
+            android:label="@string/title_activity_vibration">
+        </activity>
+
+
     </application>
 
 </manifest>

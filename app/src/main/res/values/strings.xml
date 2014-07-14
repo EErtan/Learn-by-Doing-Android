@@ -10,5 +10,51 @@
     <string name="websiteCF">http://www.dafont.com/</string>
     <string name="title_activity_my_activity2">MyActivity2</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_list">ListAct</string>
+
+    <string-array name="listViewEntries">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+        <item>nine</item>
+        <item>ten</item>
+        <item>eleven</item>
+        <item>twelve</item>
+        <item>thriteen</item>
+        <item>fourteen</item>
+    </string-array>
+
+    <string name="no">There are no objects to display</string>
+    <string name="title_activity_book">BookActivity</string>
+    <string name="contextTitle">Context Title</string>
+    <string name="view">View</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_grid">GridActivity</string>
+    <string name="dialog_title">Dia Title</string>
+    <string name="dialog_message">Dia Mess</string>
+    <string name="dialog_positive">yes</string>
+    <string name="dialog_negative">no</string>
+    <string name="Textcombinedwithimg">tws</string>
+    <string name="firstButton">First Button on the Layout</string>
+    <string name="title_activity_vibration">VibrationActivity</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="pattern">Pattern Vib</string>
+    <string name="stop">Stop</string>
+    <string name="listDialogButton">List Dialog</string>
+
+    <string name="listDialogTitle">list title</string>
+
+    <string-array name="listItems">
+        <item name="listItem1">List item 1</item>
+        <item name="listItem2">list item 2</item>
+        <item name="listItem3">list item 3</item>
+    </string-array>
+
+    <string name="pref_user_name">BobSmith</string>
 
 </resources>

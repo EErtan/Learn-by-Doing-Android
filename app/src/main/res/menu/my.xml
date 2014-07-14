@@ -1,16 +1,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MyActivity" >
-    <item android:id="@+id/action_red"
-        android:title="@string/action_red"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MyActivity">
+    <item
+        android:id="@+id/action_red"
         android:orderInCategory="100"
-        android:showAsAction="never" />
-    <item android:id="@+id/action_yellow"
-          android:title="@string/action_yellow"
-          android:orderInCategory="101"
-          android:showAsAction="never" />
-    <item android:id="@+id/action_green"
-          android:title="@string/action_green"
-          android:orderInCategory="102"
-          android:showAsAction="never" />
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/action_red"/>
+    <item
+        android:id="@+id/action_yellow"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/action_yellow"/>
+    <item
+        android:id="@+id/action_green"
+        android:orderInCategory="102"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/action_green"/>
 </menu>

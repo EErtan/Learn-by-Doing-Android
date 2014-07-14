@@ -60,6 +60,7 @@ public class MyActivity extends Activity implements LightFrag.OnFragmentInteract
 	protected void onResume(){
 		super.onResume();
 		f.onInteraciton(0);
+		f.onSwitchLight(2);
 	}
 
 	private void addFrag(){
@@ -77,6 +78,7 @@ public class MyActivity extends Activity implements LightFrag.OnFragmentInteract
 	public boolean onCreateOptionsMenu(Menu menu){
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.my, menu);
+
 		return true;
 	}
 

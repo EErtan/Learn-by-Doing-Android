@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:constantSize="true">
+    <item android:drawable="@drawable/three"
+          android:state_checked="true"
+          android:state_pressed="true"/>
+
+    <item android:drawable="@drawable/four"
+          android:state_checked="false"
+          android:state_pressed="true"/>
+
+    <item android:drawable="@drawable/five"
+          android:state_focused="true"
+          android:state_checked="true"/>
+
+    <item android:drawable="@drawable/six"
+          android:state_focused="true"
+          android:state_checked="false"/>
+    <item
+        android:drawable="@drawable/one"
+        android:state_checked="true"/>
+    <item
+        android:drawable="@drawable/two"
+        android:state_checked="false"/>
+
+    <!-- order matters and can mix and match -->
+</selector>

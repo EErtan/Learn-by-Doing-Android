@@ -1,4 +1,4 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
@@ -9,13 +9,9 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="#ff483962">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button6"/>
+        android:background="#ff483962"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/horizontalScrollView">
 
         <ScrollView android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -46,32 +42,35 @@
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView"
+                    android:layout_below="@+id/theTitle"
                     android:orientation="vertical">
 
-                        <Button
-                            android:id="@+id/button"
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox"
+                        android:checked="true"
+                        android:button="@drawable/statelist"/>
+
+                    <Button
+                            android:id="@+id/patButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Button"/>
+                            android:text="New Button"
+                            android:onClick="closeDialog"/>
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/stopButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Button"/>
-
-                        <Button
-                            android:id="@+id/button3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="New Button"/>
+                            android:text="New Button"
+                            android:onClick="startVibrationActivity"/>
 
                     <ImageView
                         android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/mdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="351dp"
+                        android:src="@drawable/fbnine"
                         android:scaleType="fitXY"
                         />
 
@@ -84,7 +83,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/theTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imageView"
@@ -93,7 +92,9 @@
                     android:drawableBottom="@drawable/tiledpng"
                     android:drawingCacheQuality="low"
                     android:onClick="changeImg"
-                    android:text="Text combined with img"/>
+                    android:text="@string/Textcombinedwithimg"
+                    android:padding="10dp"
+                    android:background="@android:color/holo_blue_dark"/>
 
 
             </RelativeLayout>
@@ -104,6 +105,57 @@
             android:layout_height="wrap_content"
             android:text="New Button"
             android:id="@+id/button5"/>
+
     </LinearLayout>
 
-</LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="396dp"
+        android:layout_height="58dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff1d17ff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstButton"
+                android:id="@+id/button6"
+                android:onClick="listAct"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button7"
+                android:onClick="listActiv"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button8"
+                android:onClick="bookActivity"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button9"
+                android:onClick="startGridActivity"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button10"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
