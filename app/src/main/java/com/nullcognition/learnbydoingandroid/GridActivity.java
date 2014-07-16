@@ -47,6 +47,7 @@ public class GridActivity extends Activity{
 
 			// or make the drawable dynamic to the call it is getting it from
 			return tv;
+			// comment
 		}
 	}
 
